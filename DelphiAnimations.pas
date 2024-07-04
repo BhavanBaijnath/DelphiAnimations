@@ -14,7 +14,8 @@ unit DelphiAnimations;
 
   Notes:
   - If you animations seem to be buggy and stopping at random points, increase the 'MaxAnimations' value below
-  - This is a little buggy sometimes and
+  - This is a little buggy sometimes so try to work with even numbers and when adding an animation,
+    make sure the 'Time' value is less than the 'Movement' value and that 'Movement' is a multiple of 'Time'
 
   Enjoy! }
 
