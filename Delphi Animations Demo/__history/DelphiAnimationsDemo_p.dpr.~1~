@@ -1,0 +1,14 @@
+program DelphiAnimationsDemo_p;
+
+uses
+  Forms,
+  DelphiAnimationsForm_u in 'DelphiAnimationsForm_u.pas' {frmDelphiAnimations};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmDelphiAnimations, frmDelphiAnimations);
+  Application.Run;
+end.

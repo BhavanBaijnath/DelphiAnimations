@@ -1,0 +1,42 @@
+unit DelphiAnimationsDemo_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, DelphiAnimations;
+
+type
+  TfrmDelphiAnimations = class(TForm)
+    Panel1: TPanel;
+    DelphiAnimations: TTimer;
+    procedure Panel1MouseEnter(Sender: TObject);
+    procedure DelphiAnimationsTimer(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmDelphiAnimations: TfrmDelphiAnimations;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmDelphiAnimations.DelphiAnimationsTimer(Sender: TObject);
+begin
+
+  AnimationTimer;
+
+end;
+
+procedure TfrmDelphiAnimations.Panel1MouseEnter(Sender: TObject);
+begin
+
+  AddAnimation(Sender, 'Top',5,5);
+
+end;
+
+end.
